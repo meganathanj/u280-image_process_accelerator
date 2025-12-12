@@ -9,7 +9,7 @@ change permission for the executables using chmod +x host_app and chmod +x openC
 
 EXECUTION:
 1. Clone the repository
-2. cd /test_run
+2. unzip test_run using cd /test_run
 3. execute the kernel using the command flow: ./host_app kernelV3.xclbin <INPUT_PATH> <OUTPUT_PATH>
    For example: ./host_app kernelV3.xclbin /test_data /fpga_out
 4. Execute the openCV application using the command flow: ./openCV_app <INPUT_PATH> <OUTPUT_PATH>
