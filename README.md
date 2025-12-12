@@ -14,3 +14,9 @@ EXECUTION:
    For example: ./host_app kernelV3.xclbin /test_data /fpga_out
 
 5. Navigate to the corresponding output path specified <OUTPUT_PATH> to obtain the sobel filter processed images
+
+
+BUILDING THE OPENCV APP:
+The openCV app might not execute if the openCV shared objects are not setup correctly! In that case the app can be build with the source code openCV_app.cpp using the below command
+   g++ -std=c++17 -Wall     `pkg-config --cflags opencv4`     openCV_app.cpp     -o app     `pkg-config --libs opencv4`
+   and the executable can be run using the command: ./openCV_app <INPUT_PATH> <OUTPUT_PATH>
