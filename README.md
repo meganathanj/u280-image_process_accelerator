@@ -3,7 +3,9 @@ This project is developed with the goal of accelerating the image preprocessing 
 
 
 PREREQUISTE:
+
 Both the applications {host_app, openCV_app} requires openCV libraries to be configured for successfull execution. Refer to install-openCV.txt to setup and configure dependencies before execution
+change permission for the executables using chmod +x host_app and chmod +x openCV_app
 
 EXECUTION:
 1. Clone the repository
