@@ -5,14 +5,12 @@ This project is developed with the goal of accelerating the image preprocessing 
 PREREQUISTE:
 
 Both the applications {host_app, openCV_app} requires openCV libraries to be configured for successfull execution. Refer to install-openCV.txt to setup and configure dependencies before execution
-change permission for the executables using chmod +x host_app and chmod +x openCV_app
+change permission for the executables using chmod +x host_app if faced with permission conflicts
 
 EXECUTION:
 1. Clone the repository
 2. unzip test_run cmd: unzip test_run and cd /test_run
 3. execute the kernel using the command flow: ./host_app kernelV3.xclbin <INPUT_PATH> <OUTPUT_PATH>
    For example: ./host_app kernelV3.xclbin /test_data /fpga_out
-4. Execute the openCV application using the command flow: ./openCV_app <INPUT_PATH> <OUTPUT_PATH>
-    For example: ./host_app  /test_data /opencv_out
 
-5. Navigate to the corresponding output directories to obtain the processed images
+5. Navigate to the corresponding output path specified <OUTPUT_PATH> to obtain the sobel filter processed images
