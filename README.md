@@ -18,6 +18,8 @@ EXECUTION:
 
 BUILDING THE OPENCV APP:
 
+ Ensure libopencv-dev packages are installed. If not, install them using,
+       sudo apt install libopencv-dev
 
 The openCV app might not execute if the openCV shared objects are not setup correctly! In that case the app can be build with the source code openCV_app.cpp using the below command
    g++ -std=c++17 -Wall     `pkg-config --cflags opencv4`     openCV_app.cpp     -o app     `pkg-config --libs opencv4`
