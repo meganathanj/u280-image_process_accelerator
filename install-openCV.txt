@@ -8,15 +8,16 @@ INSTALL ESSENTIAL DEPENDENCIES
 ----------------------------------------------------------------------------------------------------------------------------------
 
 1. Update System and Install Build Tools:
-   sudo apt update
-   sudo apt upgrade -y
+    sudo apt update
+    sudo apt upgrade -y
+	sudo apt install libopencv-dev
    
-   sudo apt install -y build-essential cmake pkg-config git \
-   libjpeg-dev libtiff-dev libpng-dev \
-   libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
-   libxvidcore-dev libx264-dev \
-   libgtk-3-dev \
-   libatlas-base-dev gfortran
+    sudo apt install -y build-essential cmake pkg-config git \
+    libjpeg-dev libtiff-dev libpng-dev \
+    libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
+    libxvidcore-dev libx264-dev \
+    libgtk-3-dev \
+    libatlas-base-dev gfortran
 
 2. Fix Missing libidn.so.11 Library:
    
